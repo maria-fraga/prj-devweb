@@ -1,0 +1,63 @@
+html {
+  font-size: clamp(1rem, calc(0.5rem + 1vw), 4rem);
+}
+
+header {
+  text-align: center;
+  padding: 3vw 5vw 3vw 5vw;
+}
+
+header nav ul li {
+  margin: 10px 0px;
+}
+
+header nav ul li fonte-amarelo {
+  color: #fbbc05;
+}
+
+header nav ul li.botao-amarelo a {
+  color: white;
+  background-color: #fbbc05;
+  padding: 4px 10px 4px 10px;
+  border-radius: 6px;
+}
+
+header nav ul li.botao-amarelo a:hover {
+    background: none;
+    border: 3px solid #fbbc05;
+    color: #a77d00;
+}
+
+header nav ul li a:hover {
+    color: #a77d00;
+}
+
+.banner {
+  background: url(../img/images/background-banner.png) no-repeat;
+  background-size: 100% auto;
+}
+
+@media only screen and (min-width: 600px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    align-items: center;
+  }
+
+  header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  header nav ul li a:hover {
+    color: #a77d00;
+  }
+
+
+  header nav ul li.botao-amarelo a:hover {
+    background: none;
+    border: 3px solid #fbbc05;
+  }
+}
