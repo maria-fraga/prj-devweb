@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28-10</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produtos</a>
+                    <ul>
+                        <li><a href="#">Notebooks</a></li>
+                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="#">Acessórios</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                    </ul>
+
+
+                </li>
+
+                <li><a href="#">Serviços</a>
+                    <ul>
+                        <li><a href="#">Vendas</a></li>
+                        <li><a href="#">Trocas</a></li>
+                        <li><a href="#">Reparo</a></li>
+                        <li><a href="#">Reserva</a></li>
+                    </ul>
+
+                </li>
+
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            color: inherit;
+        }
+
+        header nav>ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header nav ul li ul {
+            /*  display: none; */
+            opacity: 0;
+            position: absolute;
+            transition: opacity 1s;
+            background-color: rgb(241, 240, 255);
+            color: rgb(12, 12, 27);
+            border-radius: 20px;
+            left: 0;
+
+        }
+
+        header nav ul li:hover ul {
+            /* display: block; */
+            opacity: 1;
+        }
+
+        header nav {
+            background-color: rgb(12, 12, 27);
+            color: white;
+            font-size: 1.8rem;
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        header nav ul li:hover  {
+            background-color: rgb(71, 79, 153);
+            border-radius: 20px;
+            color: white;
+        }
+
+        nav ul li {
+            padding: 2vw;
+            position: relative;
+        }
+        /* mari fraga */
+    </style>
+</body>
+
+</html>
